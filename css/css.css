@@ -440,6 +440,12 @@ p
     {
         color: #2ECA7F;
     }
+    .skills .icons div
+    {
+        margin: 0px 15px 15px 0px;
+        float: left;
+        width: 65px;
+    }
     /*skills*/
 
 
@@ -1089,6 +1095,8 @@ and (max-width : 1099px)
         text-align: center;
     
     }
+    
+    
     .projects .boxs .box div
     {
         height: 50%;
