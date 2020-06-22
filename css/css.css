@@ -1122,7 +1122,7 @@ and (max-width : 1099px)
     /*acivments*/
     .ac
     {
-        width: 100%;
+        width: 90%;
         margin: 100px auto 21px auto;
         
         font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
