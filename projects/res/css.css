@@ -1,3 +1,4 @@
+
 body
 {
     
@@ -23,256 +24,556 @@ p
     clear: both;
 }
 /*header*/
-span.dark
-{
-    color: #2ECA7F;
-}
-.header
-{
+@media (min-width:1110px) 
+ {
+    span.dark
+    {
+        color: #2ECA7F;
+    }
+    .header
+    {
+        
+        background: #2ECA7F;
+        height: 120px;
+        position: fixed;
+        top:0;
+        z-index: 3;
+        width: 100%;
+        height: 120px;
+        
+    }
+    .header.dark
+    {
+        
+        background: #121212;
+        border-bottom: 2px solid #1E1E1E;
+        
+    }
+
+    .container
+    {
+        width: 85%;
+        margin: auto;
+    }
+    .container .A
+    {
+        font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    position: absolute;
+    top:53px;
+    left: 1178px;
+    font-weight: 500;
+    font-size: 18px;
+        cursor: pointer;
+    }
+    .container .A.dark
+    {
+        color:white;
+    }
+    .container .A.dark:hover
+    {
+        color:#2ECA7F;
+    }
+    .container .A:hover
+    {
+        color:white ;
+    }
+    .header .me
+    {
+        width: 50%;
+        padding-top: 1px;
+        color: white;
+        float: left;
+    }
+    .header h2
+    {
+        font-weight: bold;
+        font-size: 35px;
+        font-family: Candara;
+        margin-bottom: 0;
+    }
+    .header h3
+    {
+        font-size: 20px;
+        font-weight: 300;
+        margin-top:5px;
+        font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    }
+    .header .button-dark
+    {
+        float: right;
+        width: 40px;
+        height: 20px;
+        background-color: white;
+        border-radius: 30px;
+        margin-top: 50px;
+        border: 2px solid #444;
+        cursor: pointer;
+    }
+    .header .button-dark .button
+    {
+        background-color: white;
+        border: 2px solid #444;
+        width: 17px;
+        height: 17px;
+        margin-top: 0px;
+        margin-left: 0px;
+        border-radius: 50%;
+    }
+    .header .button-dark .button.dark
+    {
+        background-color: black;
+        border: none;
+        margin-left: 20px;
+        margin-top: 1.22px;
+
+        
+    }
+    /*header*/
+
+
+    /*home*/
+    .con
+    {
+        width: 85%;
+        margin: auto;
+    }
+    .con.dark
+    {
+        background: #131418;
+        color: white;
+    }
+
+
+
+    /*projects*/
+    .projects
+    {
+        margin-top: 150px;
+        color: #444;
+        margin-left: 5px;
+        height: 650px;
+    }
+    .projects.dark
+    {
+        
+        color: white;
+    }
+    .projects h2
+    {
+        font-size: 35px;
+        
+    }
+    .projects .boxs
+    {
+        width: 450px;
+        margin: auto;
+        height: 200px;
+    }
+    .projects .boxs .box
+    {
+        margin: 0px 20px 20px 0;
+        float: left;
+        width: 400px;
+        height: 500px;
+        background: #FFFFFF;
+        box-shadow: 5px 5px 7px grey;
+        border-radius: 3px;
+        text-align: center;
+    }
+    .projects .boxs .box.dark
+    {
+        background: #131418;
+    }
+    .projects .boxs .box .b
+    {
+        width: 250px;
+        height: 250px;
+        background: white;
+        margin: auto;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-top: 15px;
+        text-align: center;
     
-    background: #2ECA7F;
-    height: 120px;
-    position: fixed;
-    top:0;
-    z-index: 3;
-    width: 100%;
-    height: 120px;
-    
-}
-.header.dark
-{
-    
-    background: #121212;
-    border-bottom: 2px solid #1E1E1E;
-    
-}
+    }
+    .projects .boxs .box div
+    {
+        height: 50%;
+        margin-top: auto;
 
-.container
-{
-    width: 85%;
-    margin: auto;
-}
-.container .A
-{
-    font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-   position: absolute;
-   top:53px;
-   left: 1178px;
-   font-weight: 500;
-   font-size: 18px;
-    cursor: pointer;
-}
-.container .A.dark
-{
-    color:white;
-}
-.container .A.dark:hover
-{
-    color:#2ECA7F;
-}
-.container .A:hover
-{
-    color:white ;
-}
-.header .me
-{
-    width: 50%;
-    padding-top: 1px;
-    color: white;
-    float: left;
-}
-.header h2
-{
-    font-weight: bold;
-    font-size: 35px;
-    font-family: Candara;
-    margin-bottom: 0;
-}
-.header h3
-{
-    font-size: 20px;
-    font-weight: 300;
-    margin-top:5px;
-    font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-}
-.header .button-dark
-{
-    float: right;
-    width: 40px;
-    height: 20px;
-    background-color: white;
-    border-radius: 30px;
-    margin-top: 50px;
-    border: 2px solid #444;
-    cursor: pointer;
-}
-.header .button-dark .button
-{
-    background-color: white;
-    border: 2px solid #444;
-    width: 17px;
-    height: 17px;
-    margin-top: 0px;
-    margin-left: 0px;
-    border-radius: 50%;
-}
-.header .button-dark .button.dark
-{
-    background-color: black;
-    border: none;
-    margin-left: 20px;
-    margin-top: 1.22px;
-
-    
-}
-/*header*/
-
-
-/*home*/
-.con
-{
-    width: 85%;
-    margin: auto;
-}
-.con.dark
-{
-    background: #131418;
-    color: white;
-}
-
-
-
-/*projects*/
-.projects
-{
-    margin-top: 150px;
+    }
+    .projects .boxs .box .b img
+    {
+        
+        width: 80%;
+        margin-top: 20px;
+    }
+    .projects .boxs .box span
+    {
+    text-transform: capitalize;
+    }
+    .projects .boxs .box a
+    {
     color: #444;
-    margin-left: 5px;
-    height: 650px;
-}
-.projects.dark
-{
-    
+    font-size: 20px;
+    }
+    .projects .boxs .box a.dark
+    {
     color: white;
-}
-.projects h2
-{
-    font-size: 35px;
-    
-}
-.projects .boxs
-{
-    width: 450px;
-    margin: auto;
-    height: 200px;
-}
-.projects .boxs .box
-{
-    margin: 0px 20px 20px 0;
-    float: left;
-    width: 400px;
-    height: 500px;
-    background: #FFFFFF;
-    box-shadow: 5px 5px 7px grey;
-    border-radius: 3px;
-    text-align: center;
-}
-.projects .boxs .box.dark
-{
-    background: #131418;
-}
-.projects .boxs .box .b
-{
-    width: 250px;
-    height: 250px;
-    background: white;
-    margin: auto;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-top: 15px;
-    text-align: center;
+    }
+    .projects .boxs .box a:hover
+    {
+    color: #2ECA7F;
+    }
+    /*projects*/
+
+    /*icons*/
+    .icons 
+    {
+        margin: 30px auto;
+        width: 429px;
+        height: 50px;
+    }
+    .icons a
+    {
+        width: 50px;
+        height: 50px;
+        background: #444;
+        border-radius: 50%;
+        position: relative;
+        float: left;
+        margin-right: 20px;
+        text-align:center;
+    }
+    .icons a:hover
+    {
+        background: #2ECA7F;
+    }
+    .icons a i
+    {
+        font-size: 24px;
+        /*position: absolute;
+        top: 28%;
+        left: 35%;*/
+        text-align:center;
+        color: white;
+        margin-top: 13px;
+    }
+    /*icons*/
+
+    hr
+    {
+        margin-top: 65px;
+        height: 1px;
+        background: #000;
+        border: none;
+        
+    }
+    .footer
+    {
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+    }
+    .footer.dark
+    {
+        color: white;
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* for mobile*/
+@media only screen 
+and (min-width : 10px) 
+and (max-width : 1099px)
+ {
    
-}
-.projects .boxs .box div
-{
-    height: 50%;
-    margin-top: auto;
+    span.dark
+    {
+        color: #2ECA7F;
+    }
+    body
+    {
+        width:620px;
+    }
+    h2
+    {
+        text-transform: uppercase;
+        font-size: 15vw;
+    }
+    p
+    {
+        
+        font-size: 7vw;
+        line-height: 1.3;
+        margin: 22px 0;
+    }
+    .header
+    {
+        
+        background: #2ECA7F;
+        height: 120px;
+        position: fixed;
+        top:0;
+        z-index: 3;
+        width: 100%;
+        height: 120px;
+        
+    }
+    .header.dark
+    {
+        
+        background: #121212;
+        border-bottom: 2px solid #1E1E1E;
+        
+    }
 
-}
-.projects .boxs .box .b img
-{
+    .container
+    {
+        width: 90%;
+        margin: auto;
+    }
+
+    .header .me
+    {
+        width: 70%;
+        padding-top: 0px;
+        color: white;
+        float: left;
+    }
+    .header h2
+    {
+        font-weight: bold;
+        font-size: 13vw;
+        font-family: Candara;
+        margin-bottom: 0;
+        margin-top: 17px;
+        
+    }
+    .header h3
+    {
+        font-size: 7vw;
+        font-weight: 300;
+        margin-top:3px;
+        font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    }
+    .container .A
+    {
+        font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    position: absolute;
+    top:53px;
+    left: 434px;
+    font-weight: 500;
+    font-size: 18px;
+        cursor: pointer;
+    }
+    .container .A.dark
+    {
+        color:white;
+    }
+    .container .A.dark:hover
+    {
+        color:#2ECA7F;
+    }
+    .container .A:hover
+    {
+        color:white ;
+    }
     
-    width: 80%;
-    margin-top: 20px;
-}
-.projects .boxs .box span
-{
-   text-transform: capitalize;
-}
-.projects .boxs .box a
-{
-   color: #444;
-   font-size: 20px;
-}
-.projects .boxs .box a.dark
-{
-   color: white;
-}
-.projects .boxs .box a:hover
-{
-   color: #2ECA7F;
-}
-/*projects*/
+    .header .button-dark
+    {
+        float: right;
+        width: 40px;
+        height: 20px;
+        background-color: white;
+        border-radius: 30px;
+        margin-top: 50px;
+        border: 2px solid #444;
+        cursor: pointer;
+    }
+    .header .button-dark .button
+    {
+        background-color: white;
+        border: 2px solid #444;
+        width: 17px;
+        height: 17px;
+        margin-top: 0px;
+        margin-left: 0px;
+        border-radius: 50%;
+    }
+    .header .button-dark .button.dark
+    {
+        background-color: black;
+        border: none;
+        margin-left: 20px;
+        margin-top: 1.22px;
 
-/*icons*/
-.icons 
-{
-    margin: 30px auto;
-    width: 429px;
-    height: 50px;
-}
-.icons a
-{
-    width: 50px;
-    height: 50px;
-    background: #444;
-    border-radius: 50%;
-    position: relative;
-    float: left;
-    margin-right: 20px;
-    text-align:center;
-}
-.icons a:hover
-{
-    background: #2ECA7F;
-}
-.icons a i
-{
-    font-size: 24px;
-    /*position: absolute;
-    top: 28%;
-    left: 35%;*/
-    text-align:center;
-    color: white;
-    margin-top: 13px;
-}
-/*icons*/
+        
+    }
+    /*header*/
 
-hr
-{
-    margin-top: 65px;
-    height: 1px;
-    background: #000;
-    border: none;
+
+    /*home*/
+    .con
+    {
+        width: 90%;
+        margin: auto;
+    }
+    .con.dark
+    {
+        background: #131418;
+        color: white;
+    }
+
+
+
+    /*projects*/
+    .projects
+    {
+        margin: 150px auto 0 auto;
+        color: #444;
+        
+        height: 650px;
+    }
+    .projects.dark
+    {
+        
+        color: white;
+    }
+    .projects h2
+    {
+        font-size: 35px;
+        
+    }
+    .projects .boxs
+    {
+        width: 450px;
+        margin: auto;
+        height: 200px;
+    }
+    .projects .boxs .box
+    {
+        margin: 0px 20px 20px 0;
+        float: left;
+        width: 450px;
+        height: 605px;
+        background: #FFFFFF;
+        box-shadow: 5px 5px 7px grey;
+        border-radius: 3px;
+        text-align: center;
+    }
+    .projects .boxs .box.dark
+    {
+        background: #131418;
+    }
+    .projects .boxs .box .b
+    {
+        width: 250px;
+        height: 250px;
+        background: white;
+        margin: auto;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-top: 15px;
+        text-align: center;
     
-}
-.footer
-{
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-}
-.footer.dark
-{
+    }
+    .projects .boxs .box div
+    {
+        height: 50%;
+        margin-top: auto;
+
+    }
+    .projects .boxs .box .b img
+    {
+        
+        width: 80%;
+        margin-top: 20px;
+    }
+    .projects .boxs .box span
+    {
+    text-transform: capitalize;
+    }
+    .projects .boxs .box a
+    {
+    color: #444;
+    font-size: 20px;
+    }
+    .projects .boxs .box a.dark
+    {
     color: white;
-}
+    }
+    .projects .boxs .box a:hover
+    {
+    color: #2ECA7F;
+    }
+    /*projects*/
+
+    /*icons*/
+    .icons 
+    {
+        margin: 30px auto;
+        width: 429px;
+        height: 50px;
+    }
+    .icons a
+    {
+        width: 50px;
+        height: 50px;
+        background: #444;
+        border-radius: 50%;
+        position: relative;
+        float: left;
+        margin-right: 20px;
+        text-align:center;
+    }
+    .icons a:hover
+    {
+        background: #2ECA7F;
+    }
+    .icons a i
+    {
+        font-size: 24px;
+        /*position: absolute;
+        top: 28%;
+        left: 35%;*/
+        text-align:center;
+        color: white;
+        margin-top: 13px;
+    }
+    /*icons*/
+
+    hr
+    {
+        margin-top: 65px;
+        height: 1px;
+        background: #000;
+        border: none;
+        
+    }
+    .footer
+    {
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+    }
+    .footer.dark
+    {
+        color: white;
+    }
+ }

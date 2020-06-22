@@ -4,6 +4,10 @@ body
     font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
 }
+body.dark
+{
+    background: #131418;
+}
 .dark
 {
     background: #131418;
@@ -17,519 +21,1146 @@ p
     clear: both;
 }
 /*header*/
-.header
-{
-    
-    background: #2ECA7F;
-    height: 120px;
-    position: fixed;
-    top:0;
-    z-index: 3;
-    width: 100%;
-    height: 120px;
-    
-}
-.header.dark
-{
-    
-    background: #121212;
-    border-bottom: 2px solid #1E1E1E;
-    
-}
+@media (min-width:1110px) 
+ {
+    .header
+    {
+        
+        background: #2ECA7F;
+        height: 120px;
+        position: fixed;
+        top:0;
+        z-index: 3;
+        width: 100%;
+        height: 120px;
+        
+    }
+    .header.dark
+    {
+        
+        background: #121212;
+        border-bottom: 2px solid #1E1E1E;
+        
+    }
 
-.container
-{
-    width: 85%;
-    margin: auto;
-}
+    .container
+    {
+        width: 85%;
+        margin: auto;
+    }
 
-.header .me
-{
-    width: 50%;
-    padding-top: 1px;
+    .header .me
+    {
+        width: 50%;
+        padding-top: 1px;
+        color: white;
+        float: left;
+    }
+    .header h2
+    {
+        font-weight: bold;
+        font-size: 35px;
+        font-family: Candara;
+        margin-bottom: 0;
+    }
+    .header h3
+    {
+        font-size: 20px;
+        font-weight: 300;
+        margin-top:5px;
+        font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    }
+    .header .button-dark
+    {
+        float: right;
+        width: 40px;
+        height: 20px;
+        background-color: white;
+        border-radius: 30px;
+        margin-top: 50px;
+        border: 2px solid #444;
+        cursor: pointer;
+    }
+    .header .button-dark .button
+    {
+        background-color: white;
+        border: 2px solid #444;
+        width: 17px;
+        height: 17px;
+        margin-top: 0px;
+        margin-left: 0px;
+        border-radius: 50%;
+    }
+    .header .button-dark .button.dark
+    {
+        background-color: black;
+        border: none;
+        margin-left: 20px;
+        margin-top: 1.22px;
+
+        
+    }
+    /*header*/
+    /*bar*/
+    .menu
+    {
+        display: none;
+    }
+    .leftBar
+    {
+        background: white;
+        width: 20%;
+        position: fixed;
+        float: left;
+        text-align: center;
+        position: fixed;
+        top:50px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        z-index: 1;
+        color:#444;
+    }
+    .leftBar.dark
+    {
+        background: #131418;
+        color: white;
+    }
+    .leftBar div
+    {
+        width: 50%;
+        margin: 120px auto;
+    }
+    .leftBar ol
+    {
+        padding: 0;
+        width: 50%;
+        margin: auto;
+    }
+    .leftBar li
+    {
+        
+        font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        list-style: none;
+        margin-top: 50px ;
+        font-size: 17px;
+        font-weight: 500;
+        cursor: pointer;
+        text-align: left;
+    }
+    .leftBar.hide
+    {
+        
+        
+        width: 20%;
+        position: fixed;
+        float: left;
+        text-align: center;
+        position: fixed;
+        top:0px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        z-index: 1;
+        
+       
+    }
+    .leftBar li.active
+    {
+        color:#2ECA7F;
+    }
+    .leftBar i
+    {
+        
+        margin-right: 5px;
+    }
+    .leftBar li:hover
+    {
+        color:#2ECA7F;
+    }
+
+    /*bar*/
+
+    /*home*/
+    .con
+    {
+        width: 80%;
+        float: right;
+    }
+    .con.dark
+    {
+        background: #131418;
+        color: white;
+    }
+    .home
+    {
+        float: left;
+        width: 95%;
+        margin-top: 150px;
+        font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        color: #444;
+    }
+    .home.dark
+    {
+        color:white;
+    }
+    .home .img
+    {
+        float: left;
+        width:500px ;
+    }
+    .home .img img
+    {
+        width:100%;
+    }
+    .home .who
+    {
+        width: 50%;
+        float: right;
+        margin-top: 100px;
+    }
+    .home .who .o
+    {
+        float: left;
+        width: 90px;
+        height: 10px;
+        background:#2ECA7F ;
+        border-radius: 15px;
+    }
+    .home .who .t
+    {
+        float: left;
+        width: 80px;
+        height: 2px;
+        background:#2ECA7F ;
+        border-radius: 2px;
+        margin-top: 3px;
+        
+    }
+    .home .who p:first-of-type
+    {
+        margin-top: 30px;
+    }
+    .home .who h2
+    {
+        margin-bottom: 0px;
+        text-transform: uppercase;
+        font-size: 35px;
+    }
+    .home .who span
+    {
+        font-weight: bold;
+        
+    }
+    .home .who span.a
+    {
+        font-weight: 500;
+        color: #2ECA7F; 
+    }
+
+    /*home*/
+
+    /* about*/
+    .about
+    {
+        float: left;
+        width: 95%;
+        margin-top: 180px;
+        font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        color: #444;
+    }
+    .about .img
+    {
+        width: 500px;
+        float: left;
+    }
+    .about .img img
+    {
+        width: 100%;
+    }
+    .about .ab
+    {
+        width: 50%;
+        float: right;
+        margin-top: 100px;
+    }
+    .about.dark
+    {
     color: white;
-    float: left;
-}
-.header h2
-{
-    font-weight: bold;
-    font-size: 35px;
-    font-family: Candara;
-    margin-bottom: 0;
-}
-.header h3
-{
-    font-size: 20px;
-    font-weight: 300;
-    margin-top:5px;
-    font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-}
-.header .button-dark
-{
-    float: right;
-    width: 40px;
-    height: 20px;
-    background-color: white;
-    border-radius: 30px;
-    margin-top: 50px;
-    border: 2px solid #444;
-    cursor: pointer;
-}
-.header .button-dark .button
-{
-    background-color: white;
-    border: 2px solid #444;
-    width: 17px;
-    height: 17px;
-    margin-top: 0px;
-    margin-left: 0px;
-    border-radius: 50%;
-}
-.header .button-dark .button.dark
-{
-    background-color: black;
-    border: none;
-    margin-left: 20px;
-    margin-top: 1.22px;
+    }
+    .about .ab h2
+    {
+        font-size: 35px;
+        text-transform: uppercase;
+    }
+    .about .ab span
+    {
+        color: #2ECA7F;
+        
+    }
+    .icons 
+    {
+        margin-top: 30px;
+    }
+    .icons a
+    {
+        width: 50px;
+        height: 50px;
+        background: #444;
+        border-radius: 50%;
+        position: relative;
+        float: left;
+        margin-right: 20px;
+        text-align:center;
+    }
+    .icons a:hover
+    {
+        background: #2ECA7F;
+    }
+    .icons a i
+    {
+        font-size: 24px;
+        /*position: absolute;
+        top: 28%;
+        left: 35%;*/
+        text-align:center;
+        color: white;
+        margin-top: 13px;
+    }
+    /*about*/
 
-    
-}
-/*header*/
-/*bar*/
-.leftBar
-{
-    background: white;
-    width: 20%;
-    position: fixed;
-    float: left;
-    text-align: center;
-    position: fixed;
-    top:0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    z-index: 1;
-    color:#444;
-}
-.leftBar.dark
-{
-    background: #131418;
-    color: white;
-}
-.leftBar ol
-{
-    padding: 0;
-    width: 50%;
-    margin: 120px auto;
-}
-.leftBar li
-{
-    
-    font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    list-style: none;
-    margin-top: 50px ;
-    font-size: 17px;
-    font-weight: 500;
-    cursor: pointer;
-    text-align: left;
-}
-.leftBar li.active
-{
-    color:#2ECA7F;
-}
-.leftBar i
-{
-    
-    margin-right: 5px;
-}
-.leftBar li:hover
-{
-    color:#2ECA7F;
-}
+    /*eduactinon*/
+    .eduaction
+    {
+        float: left;
+        width: 95%;
+        margin-top: 180px;
+        font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        color: #444;
+    }
+    .eduaction .img
+    {
+        width: 500px;
+        float: left;
+    }
+    .eduaction .img img
+    {
+        width: 100%;
+        
+    }
+    .eduaction .ed
+    {
+        width: 50%;
+        float: right;
+        margin-top: 100px;
+    }
+    .eduaction.dark
+    {
+        color:white;
+    }
+    .eduaction .ed h2
+    {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .eduaction .ed h2:first-of-type
+    {
+        font-size: 35px;
+        text-transform: capitalize;
+    }
+    .eduaction .ed h3
+    {
+        margin-top: 0;
+        color: #2ECA7F;
+        font-size: 19px;
+    }
+    /*eduactinon*/
 
-/*bar*/
-
-/*home*/
-.con
-{
-    width: 80%;
-    float: right;
-}
-.con.dark
-{
-    background: #131418;
-    color: white;
-}
-.home
-{
-    float: left;
-    width: 95%;
-    margin-top: 150px;
-    font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    color: #444;
-}
-.home.dark
-{
-    color:white;
-}
-.home .img
-{
-    float: left;
-    width:500px ;
-}
-.home .img img
-{
-    width:100%;
-}
-.home .who
-{
-    width: 50%;
-    float: right;
-    margin-top: 100px;
-}
-.home .who .o
-{
-    float: left;
-    width: 90px;
-    height: 10px;
-    background:#2ECA7F ;
-    border-radius: 15px;
-}
-.home .who .t
-{
-    float: left;
-    width: 80px;
-    height: 2px;
-    background:#2ECA7F ;
-    border-radius: 2px;
-    margin-top: 3px;
+    /*skills*/
+    .skills
+    {
+        float: left;
+        width: 95%;
+        margin-top: 180px;
+        font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        color: #444;
+    }
+    .skills .img
+    {
+        width: 500px;
+        float: left;
+    }
+    .skills .img img
+    {
+        width: 100%;
+        
+    }
+    .skills .sk
+    {
+        width: 50%;
+        float: right;
+        margin-top: 100px;
+    }
+    .skills.dark
+    {
+        color:white;
+    }
+    .skills .sk h2
+    {
+        font-size: 35px;
     
-}
-.home .who p:first-of-type
-{
-    margin-top: 30px;
-}
-.home .who h2
-{
-    margin-bottom: 0px;
-    text-transform: uppercase;
-    font-size: 35px;
-}
-.home .who span
-{
-    font-weight: bold;
-    
-}
-.home .who span.a
-{
-    font-weight: 500;
-    color: #2ECA7F; 
-}
+    }
+    .skills .icons
+    {
+        margin-top: 30px;
+    }
+    .skills h3
+    {
+        font-size: 25px;
+    }
+    .skills span
+    {
+        color: #2ECA7F;
+    }
+    .skills i
+    {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 70px;
+        /*position: absolute;
+        top: 28%;
+        left: 35%;*/
+        text-align:center;
+        color:#868E95;
+        margin-top: 13px;
+        margin-right: 15px;
+    }
+    .skills i:hover
+    {
+        color: #2ECA7F;
+    }
+    /*skills*/
 
-/*home*/
 
-/* about*/
-.about
-{
-    float: left;
-    width: 95%;
-    margin-top: 180px;
-    font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    color: #444;
-}
-.about .img
-{
-    width: 500px;
-    float: left;
-}
-.about .img img
-{
-    width: 100%;
-}
-.about .ab
-{
-    width: 50%;
-    float: right;
-    margin-top: 100px;
-}
-.about.dark
-{
-   color: white;
-}
-.about .ab h2
-{
-    font-size: 35px;
-    text-transform: uppercase;
-}
-.about .ab span
-{
-    color: #2ECA7F;
-    
-}
-.icons 
-{
-    margin-top: 30px;
-}
-.icons a
-{
-    width: 50px;
-    height: 50px;
-    background: #444;
-    border-radius: 50%;
-    position: relative;
-    float: left;
-    margin-right: 20px;
-    text-align:center;
-}
-.icons a:hover
-{
-    background: #2ECA7F;
-}
-.icons a i
-{
-    font-size: 24px;
-    /*position: absolute;
-    top: 28%;
-    left: 35%;*/
-    text-align:center;
-    color: white;
-    margin-top: 13px;
-}
-/*about*/
 
-/*eduactinon*/
-.eduaction
-{
-    float: left;
-    width: 95%;
-    margin-top: 180px;
-    font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    color: #444;
-}
-.eduaction .img
-{
-    width: 500px;
-    float: left;
-}
-.eduaction .img img
-{
-    width: 100%;
+    /*projects*/
+    .projects
+    {
+        margin-top: 250px;
+        color: #444;
+        margin-left: 5px;
+    }
+    .projects.dark
+    {
+        margin-top: 200px;
+        color: white;
+    }
+    .projects h2
+    {
+        font-size: 35px;
+        text-transform: uppercase;
+    }
+    .projects .boxs
+    {
+        width: 100%;
+        height: 900px;
+    }
+    .projects .boxs .box
+    {
+        margin: 0px 20px 20px 0;
+        float: left;
+        width: 250px;
+        height: 270px;
+        background: #FFFFFF;
+        box-shadow: 5px 5px 7px grey;
+        border-radius: 3px;
+        text-align: center;
+    }
+    .projects .boxs .box.dark
+    {
+        background: #131418;
+    }
+    .projects .boxs .box .b
+    {
+        width: 80%;
+        height: 80%;
+        background: white;
+        margin: auto;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-top: 15px;
+        text-align: center;
     
-}
-.eduaction .ed
-{
-    width: 50%;
-    float: right;
-    margin-top: 100px;
-}
-.eduaction.dark
-{
-    color:white;
-}
-.eduaction .ed h2
-{
-    font-size: 20px;
-    margin-bottom: 0;
-}
-.eduaction .ed h2:first-of-type
-{
-    font-size: 35px;
+    }
+    .projects .boxs .box div
+    {
+        height: 50%;
+        margin-top: auto;
+
+    }
+    .projects .boxs .box .b img
+    {
+        
+        width: 80%;
+        margin-top: 20px;
+    }
+    .projects .boxs .box span
+    {
     text-transform: capitalize;
-}
-.eduaction .ed h3
-{
-    margin-top: 0;
-    color: #2ECA7F;
-    font-size: 19px;
-}
-/*eduactinon*/
+    }
+    /*projects*/
 
-/*skills*/
-.skills
-{
-    float: left;
-    width: 95%;
-    margin-top: 180px;
-    font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    color: #444;
-}
-.skills .img
-{
-    width: 500px;
-    float: left;
-}
-.skills .img img
-{
-    width: 100%;
+    /*acivments*/
+    .ac
+    {
+        float: left;
+        width: 95%;
+        margin-top: 180px;
+        font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        color: #444;
+    }
+    .ac h2
+    {
+        font-size:35px
+    }
+    .ac.dark
+    {
+        color: white;
+    }
+    .ac .a
+    {
+        float: left;
+        width: 45%;
+        margin-top: 180px;
+        font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        
+    }
+    .ac i
+    {
+        color: #2ECA7F;
+        margin-right: 5px;
+    }
+    .ac .img
+    {
+        width: 500px;
+        float: left;
+    }
+    .ac .img img
+    {
+        width: 100%;
+    }
+    .ac .a
+    {
+        
+    }
+    /*acivments*/
+
+    hr
+    {
+        margin-top: 180px;
+        height: 1px;
+        background: #000;
+        border: none;
+        
+    }
+    .footer
+    {
+        text-align: center;
+        font-weight: bold;
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+/* for mobile*/
+@media only screen 
+and (min-width : 10px) 
+and (max-width : 1099px)
+ {
+
+    body
+    {
+        width:620px;
+    }
+    h2
+    {
+        text-transform: uppercase;
+        font-size: 15vw;
+    }
+    p
+    {
+        
+        font-size: 7vw;
+        line-height: 1.3;
+        margin: 22px 0;
+    }
+    .header
+    {
+        
+        background: #2ECA7F;
+        height: 120px;
+        position: fixed;
+        top:0;
+        z-index: 3;
+        width: 100%;
+        height: 120px;
+        
+    }
+    .header.dark
+    {
+        
+        background: #121212;
+        border-bottom: 2px solid #1E1E1E;
+        
+    }
+
+    .container
+    {
+        width: 90%;
+        margin: auto;
+    }
+
+    .header .me
+    {
+        width: 70%;
+        padding-top: 0px;
+        color: white;
+        float: left;
+    }
+    .header h2
+    {
+        font-weight: bold;
+        font-size: 13vw;
+        font-family: Candara;
+        margin-bottom: 0;
+        margin-top: 17px;
+        
+    }
+    .header h3
+    {
+        font-size: 7vw;
+        font-weight: 300;
+        margin-top:3px;
+        font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    }
+    .header .button-dark
+    {
+        float: right;
+        width: 40px;
+        height: 20px;
+        background-color: white;
+        border-radius: 30px;
+        margin-top: 50px;
+        border: 2px solid #444;
+        cursor: pointer;
+    }
+    .header .button-dark .button
+    {
+        background-color: white;
+        border: 2px solid #444;
+        width: 17px;
+        height: 17px;
+        margin-top: 0px;
+        margin-left: 0px;
+        border-radius: 50%;
+    }
+    .header .button-dark .button.dark
+    {
+        background-color: black;
+        border: none;
+        margin-left: 20px;
+        margin-top: 1.22px;
+
+        
+    }
+    /*header*/
+    /*bar*/
+    .menu
+    {
+        position: fixed;
+        top:126px;
+        width: 9vw;
+        height: 9vw;
+        background: #438a5e;
+        border: 3px solid #0c9463;
+        text-align: center;
+        border-radius: 3px;
+        z-index: 4;
+        left: 93%;
+    }
+    .menu i
+    {
+       font-size: 8vw;
+       margin-top: 3.1px;
+    }
     
-}
-.skills .sk
-{
-    width: 50%;
-    float: right;
-    margin-top: 100px;
-}
-.skills.dark
-{
-    color:white;
-}
-.skills .sk h2
-{
-    font-size: 35px;
-   
-}
-.skills .icons
-{
-    margin-top: 30px;
-}
-.skills h3
-{
-    font-size: 25px;
-}
-.skills span
-{
-    color: #2ECA7F;
-}
-.skills i
-{
-    margin-top: 30px;
-    margin-bottom: 50px;
-    font-size: 70px;
-    /*position: absolute;
-    top: 28%;
-    left: 35%;*/
-    text-align:center;
-    color:#868E95;
-    margin-top: 13px;
-    margin-right: 15px;
-}
-.skills i:hover
-{
-    color: #2ECA7F;
-}
-/*skills*/
+    
+    .leftBar.hide
+    {
+        
+        display: none;
+       
+    }
+    .leftBar
+    {
+        
+        width: 620px;
+        display: inline;
+        position: fixed;
+        top:120px;
+        border-top: 5px solid #1f8a56;
+        background: #2ECA7F;
+        z-index: 3;
+    }
+    .leftBar.dark
+    {
+        background: #131418;
+        color: white;
+    }
+    .leftBar ol
+    {
+        padding: 0;
+        width: 90%;
+        margin: 25px auto 0 auto;
+    }
+    .leftBar li
+    {
+        
+        font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        list-style: none;
+        margin-bottom: 30px ;
+        font-size: 8vw;
+        font-weight: 500;
+        cursor: pointer;
+        text-align: left;
+    }
+    .leftBar li.active
+    {
+        color:#053E79;
+    }
+    .leftBar i
+    {
+        
+        margin-right: 5px;
+    }
+    .leftBar li:hover
+    {
+        color:#053E79;
+    }
 
+    /*bar*/
 
+    /*home*/
+    .con
+    {
+        width: 100%;
+        margin: auto;
+    }
+    .con.dark
+    {
+        background: #131418;
+        color: white;
+    }
+    .home
+    {
+        
+        width: 100%;
+        margin-top: 150px;
+        font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        color: #444;
+        margin: 180px auto;
+    }
+    .home.dark
+    {
+        color:white;
+    }
+    .home .img
+    {
+        margin: auto;
+        width: 90%;
+    }
+    .home .img img
+    {
+        width:100%;
+    }
+    .home .who
+    {
+        width: 90%;
+        margin: 33px auto;
+    }
+    .home .who .o
+    {
+        float: left;
+        width:143px;
+        height: 10px;
+        background:#2ECA7F ;
+        border-radius: 15px;
+    }
+    .home .who .t
+    {
+        float: left;
+        width: 138px;
+        height: 2px;
+        background:#2ECA7F ;
+        border-radius: 2px;
+        margin-top: 3px;
+        
+    }
+    .home .who p:first-of-type
+    {
+        margin-top: 30px;
+    }
+    .home .who h2
+    {
+        margin-bottom: 0px;
+        
+    }
+    .home .who span
+    {
+        font-weight: bold;
+        
+    }
+    .home .who span.a
+    {
+        font-weight: 500;
+        color: #2ECA7F; 
+    }
 
-/*projects*/
-.projects
-{
-    margin-top: 200px;
-    color: #444;
-    margin-left: 5px;
-}
-.projects.dark
-{
-    margin-top: 200px;
+    /*home*/
+
+    /* about*/
+    .about
+    {
+        
+        width: 100%;
+        margin: 180px auto;
+        margin-top: 180px;
+        font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        color: #444;
+        
+    }
+    .about .img
+    {
+        margin: auto;
+        width: 90%;
+    }
+    .about .img img
+    {
+        width: 100%;
+    }
+    .about .ab
+    {
+        width: 90%;
+        margin: 33px auto;
+    }
+    .about.dark
+    {
     color: white;
-}
-.projects h2
-{
-    font-size: 35px;
+    }
     
-}
-.projects .boxs
-{
-    width: 100%;
-    height: 900px;
-}
-.projects .boxs .box
-{
-    margin: 0px 20px 20px 0;
-    float: left;
-    width: 250px;
-    height: 270px;
-    background: #FFFFFF;
-    box-shadow: 5px 5px 7px grey;
-    border-radius: 3px;
+    .about .ab span
+    {
+        color: #2ECA7F;
+        
+    }
+    .icons 
+    {
+        margin-top: 30px;
+        height: 75px;
+    }
+    .icons a
+    {
+        width: 90px;
+        height: 90px;
+        background: #444;
+        border-radius: 50%;
+        position: relative;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .icons a:hover
+    {
+        background: #2ECA7F;
+    }
+    .icons a i
+    {
+        font-size: 13vw;
     text-align: center;
-}
-.projects .boxs .box.dark
-{
-    background: #131418;
-}
-.projects .boxs .box .b
-{
-    width: 80%;
-    height: 80%;
-    background: white;
-    margin: auto;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-top: 15px;
-    text-align: center;
-   
-}
-.projects .boxs .box div
-{
-    height: 50%;
-    margin-top: auto;
-
-}
-.projects .boxs .box .b img
-{
-    
-    width: 80%;
-    margin-top: 20px;
-}
-.projects .boxs .box span
-{
-   text-transform: capitalize;
-}
-/*projects*/
-
-/*acivments*/
-.ac
-{
-    float: left;
-    width: 95%;
-    margin-top: 180px;
-    font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    color: #444;
-}
-.ac.dark
-{
     color: white;
-}
-.ac .a
-{
-    float: left;
-    width: 45%;
-    margin-top: 180px;
-    font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    
-}
-.ac i
-{
-    color: #2ECA7F;
-    margin-right: 5px;
-}
-.ac .img
-{
-    width: 500px;
-    float: left;
-}
-.ac .img img
-{
-    width: 100%;
-}
-.ac .a
-{
-    
-}
-/*acivments*/
+    margin-top: 22px;
+    }
+    /*about*/
 
-hr
-{
-    margin-top: 180px;
-    height: 1px;
-    background: #000;
-    border: none;
+    /*eduactinon*/
+    .eduaction
+    {
+        width: 100%;
+        margin: 180px auto;
+        margin-top: 180px;
+        font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        color: #444;
+    }
+    .eduaction .img
+    {
+        margin: auto;
+        width: 90%;
+    }
+    .eduaction .img img
+    {
+        width: 100%;
+        
+    }
+    .eduaction .ed
+    {
+        width: 90%;
+        margin: -9px auto;
+    }
+    .eduaction.dark
+    {
+        color:white;
+    }
+    .eduaction .ed h2
+    {
+        margin-bottom: 0;
+    }
+    .eduaction .ed h2.gg
+    {
+        font-size: 10vw;
+        text-transform: capitalize;
+    }
+    .eduaction .ed h3
+    {
+        margin-top: 5px;
+        color: #2ECA7F;
+        font-size: 19px;
+    }
+    /*eduactinon*/
+
+    /*skills*/
+    .skills
+    {
+        width: 100%;
+        margin: 180px auto;
+        margin-top: 180px;
+        font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        color: #444;
+    }
+    .skills .img
+    {
+        margin: auto;
+        width: 90%;
+    }
+    .skills .img img
+    {
+        width: 100%;
+        
+    }
+    .skills .sk
+    {
+        width: 90%;
+        margin: 33px auto;
+    }
+    .skills.dark
+    {
+        color:white;
+    }
     
-}
-.footer
-{
-    text-align: center;
-    font-weight: bold;
-}
+    .skills .icons
+    {
+        margin-top: 30px;
+    }
+    .skills h3
+    {
+        font-size: 10vw;
+    }
+    .skills span
+    {
+        color: #2ECA7F;
+    }
+    .skills i
+    {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 24vw;
+        /*position: absolute;
+        top: 28%;
+        left: 35%;*/
+        text-align:center;
+        color:#868E95;
+        margin-top: 13px;
+        margin-right: 15px;
+    }
+    .skills i:hover
+    {
+        color: #2ECA7F;
+    }
+    /*skills*/
+
+
+
+    /*projects*/
+    .projects
+    {
+        width: 90%;
+        margin: 200px auto;
+        color: #444;
+        
+        height: 1221px;
+    }
+    .projects.dark
+    {
+        margin-top: 200px;
+        color: white;
+    }
+    .projects h2
+    {
+        
+        text-transform: uppercase;
+    }
+    .projects .boxs
+    {
+        width: 100%;
+        height: 900px;
+    }
+    .projects .boxs .box
+    {
+        margin: 0px 29px 19px 0;
+        float: left;
+        width: 250px;
+        height: 270px;
+        background: #FFFFFF;
+        box-shadow: 5px 5px 7px grey;
+        border-radius: 3px;
+        text-align: center;
+    }
+    .projects .boxs .box.dark
+    {
+        background: #131418;
+    }
+    .projects .boxs .box .b
+    {
+        width: 80%;
+        height: 80%;
+        background: white;
+        margin: auto;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-top: 15px;
+        text-align: center;
+    
+    }
+    .projects .boxs .box div
+    {
+        height: 50%;
+        margin-top: auto;
+
+    }
+    .projects .boxs .box .b img
+    {
+        
+        width: 80%;
+        margin-top: 20px;
+    }
+    .projects .boxs .box span
+    {
+        font-size: 6vw;
+        text-transform: capitalize;
+    }
+    /*projects*/
+
+    /*acivments*/
+    .ac
+    {
+        width: 100%;
+        margin: 180px auto 21px auto;
+        
+        font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        color: #444;
+    }
+    
+    .ac.dark
+    {
+        color: white;
+    }
+    .ac .a
+    {
+        margin: auto;
+        width: 90%;
+        margin-top: 180px;
+        font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        
+    }
+    .ac i
+    {
+        color: #2ECA7F;
+        margin-right: 5px;
+    }
+    .ac .img
+    {
+        margin: auto;
+        width: 90%;
+    }
+    .ac .img img
+    {
+        width: 100%;
+    }
+    .ac .a
+    {
+        
+    }
+    /*acivments*/
+
+    hr
+    {
+        margin-top: 180px;
+        height: 1px;
+        background: #000;
+        border: none;
+        
+    }
+    .footer
+    {
+        text-align: center;
+        font-weight: bold;
+    }
+ }

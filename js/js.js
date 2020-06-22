@@ -14,6 +14,9 @@ window.onload=function()
         localStorage.setItem("mode", "normal");
     }
 }
+/*window.onbeforeunload =function(){
+    localStorage.clear();
+}*/
 
 //make leftbar
 var homeLi=document.getElementById('h'),
@@ -37,6 +40,7 @@ homeLi.onclick=function()
         left:0,
         behavior: 'smooth'}
     );
+    leftBar.classList.add('hide');
 }
 aboutLi.onclick=function()
 {
@@ -45,6 +49,7 @@ aboutLi.onclick=function()
         left:0,
         behavior: 'smooth'}
     );
+    leftBar.classList.add('hide');
 }
 educationLi.onclick=function()
 {
@@ -53,6 +58,7 @@ educationLi.onclick=function()
         left:0,
         behavior: 'smooth'}
     );
+    leftBar.classList.add('hide');
 }
 skillsLi.onclick=function()
 {
@@ -61,6 +67,7 @@ skillsLi.onclick=function()
         left:0,
         behavior: 'smooth'}
     );
+    leftBar.classList.add('hide');
 }
 projectsLi.onclick=function()
 {
@@ -69,6 +76,7 @@ projectsLi.onclick=function()
         left:0,
         behavior: 'smooth'}
     );
+    leftBar.classList.add('hide');
 }
 achLi.onclick=function()
 {
@@ -77,6 +85,7 @@ achLi.onclick=function()
         left:0,
         behavior: 'smooth'}
     );
+    leftBar.classList.add('hide');
 }
 window.onscroll=function()
 {
@@ -130,6 +139,7 @@ function toggleDarkNormal()
     skillsDiv.classList.toggle('dark');
     projectsDiv.classList.toggle('dark');
     achDiv.classList.toggle('dark');
+    document.body.classList.toggle('dark');
     for(var i=0;i<arrBox.length;i++)
         arrBox[i].classList.toggle('dark');
     if(achDiv.classList.contains('dark'))
@@ -138,3 +148,12 @@ function toggleDarkNormal()
         localStorage.setItem("mode", "normal");
 }
 butDarkMode.onclick=toggleDarkNormal;
+
+
+/*menu button in moblie verson*/
+var menu=document.getElementById('menu');
+menu.onclick=function()
+{
+    
+    leftBar.classList.toggle('hide');
+}
