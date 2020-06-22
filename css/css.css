@@ -660,7 +660,7 @@ and (max-width : 1099px)
     {
         width: 95%;
         margin: auto;
-        height: 40000px;
+        
     }
 
     .header .me
@@ -749,7 +749,7 @@ and (max-width : 1099px)
     {
         
         width: 100%;
-        display: inline;
+        
         position: fixed;
         top:100px;
         border-top: 5px solid #1f8a56;
@@ -915,14 +915,14 @@ and (max-width : 1099px)
     .icons a
     {
         width: 50px;
-    height: 50px;
-    background: #444;
-    border-radius: 50%;
-    position: relative;
-    float: left;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    text-align: center;
+        height: 50px;
+        background: #444;
+        border-radius: 50%;
+        position: relative;
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        text-align: center;
     }
     .icons a:hover
     {
@@ -931,9 +931,9 @@ and (max-width : 1099px)
     .icons a i
     {
         font-size: 7vw;
-    text-align: center;
-    color: white;
-    margin-top: 13px;
+        text-align: center;
+        color: white;
+        margin-top: 13px;
 
     }
     /*about*/
@@ -1078,7 +1078,9 @@ and (max-width : 1099px)
         box-shadow: 5px 5px 7px grey;
         border-radius: 3px;
         text-align: center;
+        position: relative;
     }
+    
     .projects .boxs .box.dark
     {
         background: #131418;
@@ -1113,6 +1115,7 @@ and (max-width : 1099px)
     {
         font-size: 6vw;
         text-transform: capitalize;
+        
     }
     /*projects*/
 
@@ -1130,14 +1133,7 @@ and (max-width : 1099px)
     {
         color: white;
     }
-    .ac .a
-    {
-        margin: auto;
-        width: 90%;
-        margin-top: 0px;
-        font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-        
-    }
+    
     .ac i
     {
         color: #2ECA7F;
