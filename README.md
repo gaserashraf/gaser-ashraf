@@ -8,4 +8,4 @@
 
 # Screenshots
 ## 🌞 Light Theme
-![1]('screen shots'/1.png)
+![1](screen-shots/1.png)
