@@ -914,15 +914,15 @@ and (max-width : 1099px)
     }
     .icons a
     {
-        width: 60px;
-        height: 60px;
-        background: #444;
-        border-radius: 50%;
-        position: relative;
-        float: left;
-        margin-right: 20px;
-        margin-bottom: 20px;
-        text-align: center;
+        width: 50px;
+    height: 50px;
+    background: #444;
+    border-radius: 50%;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
     }
     .icons a:hover
     {
@@ -930,10 +930,10 @@ and (max-width : 1099px)
     }
     .icons a i
     {
-        font-size: 9vw;
+        font-size: 7vw;
     text-align: center;
     color: white;
-    margin-top: 14px;
+    margin-top: 13px;
 
     }
     /*about*/
