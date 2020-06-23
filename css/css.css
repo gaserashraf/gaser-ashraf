@@ -148,36 +148,7 @@ p
         cursor: pointer;
         text-align: left;
     }
-    .leftBar.hide
-    {
-        background: white;
-        width: 20%;
-        position: fixed;
-        float: left;
-        text-align: center;
-        position: fixed;
-        
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        z-index: 1;
-        color:#444;
-        /*
-        width: 20%;
-        position: fixed;
-        float: left;
-        text-align: center;
-        position: fixed;
-        top:0px;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        z-index: 1;
-        */
-       
-    }
+    
     .leftBar li.active
     {
         color:#2ECA7F;
