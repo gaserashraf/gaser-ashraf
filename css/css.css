@@ -20,7 +20,7 @@ p
     {
         height: 4000px;
         font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    
+        overflow-x: hidden;
     }
     .header
     {
@@ -32,6 +32,7 @@ p
         z-index: 3;
         width: 100%;
         height: 120px;
+        border-bottom: 2px solid #2ECA7F;
         
     }
     .header.dark
@@ -113,13 +114,13 @@ p
         float: left;
         text-align: center;
         position: fixed;
-        
         left: 0;
         display: flex;
         flex-direction: column;
         height: 100vh;
         z-index: 1;
         color:#444;
+        
     }
     .leftBar.dark
     {
@@ -183,6 +184,20 @@ p
         margin-top: 150px;
         font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
         color: #444;
+        transition: opacity .75s ;
+        transition: transform .75s ease-in-out;
+        overflow: hidden;
+    }
+    .home.hide
+    {
+        transform: translate(0,-500px);
+        opacity: 0;
+        
+    }
+    .home.show
+    {
+        opacity: 1;
+        transform: translate(0px,0);
     }
     .home.dark
     {
@@ -252,6 +267,21 @@ p
         margin-top: 180px;
         font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
         color: #444;
+        z-index: 2;
+        transition: opacity .75s ;
+        transition: transform .75s ease-in-out;
+        overflow: hidden;
+    }
+    .about.hide
+    {
+        transform: translate(-900px,0);
+        opacity: 0;
+        
+    }
+    .about.show
+    {
+        opacity: 1;
+        transform: translate(0px,0);
     }
     .about .img
     {
@@ -316,11 +346,25 @@ p
     /*eduactinon*/
     .eduaction
     {
-        float: left;
+        
         width: 95%;
         margin-top: 180px;
         font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
         color: #444;
+        transition: opacity .75s ;
+        transition: transform .75s ease-in-out;
+        
+    }
+    .eduaction.hide
+    {
+        transform: translate(900px,0);
+        opacity: .3;
+        
+    }
+    .eduaction.show
+    {
+        opacity: 1;
+        transform: translate(0px,0);
     }
     .eduaction .img
     {
@@ -368,6 +412,20 @@ p
         margin-top: 180px;
         font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
         color: #444;
+        transition: opacity .75s ;
+        transition: transform .75s ease-in-out;
+        
+    }
+    .skills.hide
+    {
+        transform: translate(-900px,0);
+        opacity: .3;
+        
+    }
+    .skills.show
+    {
+        opacity: 1;
+        transform: translate(0px,0);
     }
     .skills .img
     {
@@ -439,10 +497,25 @@ p
         margin-top: 250px;
         color: #444;
         margin-left: 5px;
+        transition: opacity .75s ;
+        transition: transform .75s ease-in-out;
+        overflow: hidden;
+        opacity: 1;
+    }
+    .projects.hide
+    {
+        transform: translate(900px,0);
+        opacity: 0;
+        
+    }
+    .projects.show
+    {
+        
+        transform: translate(0,0);
     }
     .projects.dark
     {
-        margin-top: 200px;
+        
         color: white;
     }
     .projects h2
@@ -453,11 +526,12 @@ p
     .projects .boxs
     {
         width: 100%;
-        height: 900px;
+        height: 600px;
+        
     }
     .projects .boxs .box
     {
-        margin: 0px 20px 20px 0;
+        margin: 0px 20px 20px 20px;
         float: left;
         width: 250px;
         height: 270px;
@@ -465,6 +539,11 @@ p
         box-shadow: 5px 5px 7px grey;
         border-radius: 3px;
         text-align: center;
+        transition: transform .5s ease-in-out;
+    }
+    .projects .boxs .box:hover
+    {
+        transform: scale(1.1,1.1);
     }
     .projects .boxs .box.dark
     {
@@ -472,8 +551,8 @@ p
     }
     .projects .boxs .box .b
     {
-        width: 80%;
-        height: 80%;
+        width: 200px;
+        height: 200px;
         background: white;
         margin: auto;
         border-radius: 50%;
@@ -505,9 +584,23 @@ p
     {
         float: left;
         width: 95%;
-        margin-top: 180px;
+        margin-top: 200px;
         font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
         color: #444;
+        transition: opacity .75s ;
+        transition: transform .75s ease-in-out;
+        overflow: hidden;
+    }
+    .ac.hide
+    {
+        transform: translate(0,500px);
+        opacity: 0;
+        
+    }
+    .ac.show
+    {
+        opacity: 1;
+        transform: translate(0px,0);
     }
     .ac h2
     {

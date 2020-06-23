@@ -1,4 +1,6 @@
-
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
 window.onload=function()
 {
     if(localStorage.getItem("mode")&&localStorage.getItem("mode")=="normal")
@@ -13,6 +15,8 @@ window.onload=function()
         
         localStorage.setItem("mode", "normal");
     }
+    homeDiv.classList.remove('hide');
+    homeDiv.classList.add('show');
 }
 /*window.onbeforeunload =function(){
     localStorage.clear();
@@ -96,7 +100,9 @@ window.onscroll=function()
     else
         homeLi.classList.remove('active');
     if(scrollY>=aboutDiv.offsetTop-400&&scrollY<=educationDiv.offsetTop-400)
-        aboutLi.classList.add('active');
+        {
+            aboutLi.classList.add('active');
+        }
     else
         aboutLi.classList.remove('active');
     if(scrollY>=educationDiv.offsetTop-400&&scrollY<=skillsDiv.offsetTop-400)
@@ -115,6 +121,33 @@ window.onscroll=function()
         achLi.classList.add('active');
     else
         achLi.classList.remove('active');
+
+    if(scrollY>=aboutDiv.offsetTop-500&&scrollY<educationDiv.offsetTop-500)
+    {
+        aboutDiv.classList.add('show');
+        aboutDiv.classList.remove('hide');
+    }
+    if(scrollY>=educationDiv.offsetTop-500&&scrollY<skillsDiv.offsetTop)
+    {
+        educationDiv.classList.add('show');
+        educationDiv.classList.remove('hide');
+    }
+    if(scrollY>=skillsDiv.offsetTop-500&&scrollY<projectsDiv.offsetTop-500)
+    {
+        skillsDiv.classList.add('show');
+        skillsDiv.classList.remove('hide');
+    }
+    if(scrollY>=projectsDiv.offsetTop-500&&scrollY<achDiv.offsetTop-500)
+    {
+        projectsDiv.classList.add('show');
+        projectsDiv.classList.remove('hide');
+    }
+    if(scrollY>=achDiv.offsetTop-500)
+    {
+        achDiv.classList.add('show');
+        achDiv.classList.remove('hide');
+    }
+    
 }
 
 //get elements to dark mode
