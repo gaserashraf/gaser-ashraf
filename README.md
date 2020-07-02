@@ -1,9 +1,11 @@
 # gaser-ashraf
 🤵 My personal website as a way to showcase more about me, education, main projects, skills and achievements...
+# Build with
+* vanilla javascript
 # features
--Simple
--Dark mode
--responsive
+* Simple
+* Dark mode
+* responsive
 
 
 # Screenshots
